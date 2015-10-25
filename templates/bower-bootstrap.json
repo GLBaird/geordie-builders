@@ -1,0 +1,27 @@
+{
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "main": "./server/server.js",
+  "authors": [
+    "{{author}}"
+  ],
+  "license": "{{license}}",
+  "moduleType": [],
+  "homepage": "{{homepage}}",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "bootstrap": "~3.3.5"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.7"
+  }
+}

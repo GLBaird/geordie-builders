@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="{{appname}}">
+<head>
+    <meta charset="UTF-8">
+    <title>{{appname}}</title>
+
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="bower/angular/angular.js"></script>
+    <script src="bower/angular-route/angular-route.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>{{appname}}</h1>
+    </header>
+
+    <nav class="shadow">
+{{viewlinks}}
+    </nav>
+
+    <main>
+        <div ng-view></div>
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

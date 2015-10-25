@@ -1,0 +1,38 @@
+{
+  "name": "geordie-builders",
+  "version": "1.0.0",
+  "description": "Simple tool for creating MEAN Web Application using Browserify building and testing",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/GLBaird/geordie-builders"
+  },
+  "keywords": [
+    "MEAN",
+    "templates",
+    "builder",
+    "MVC",
+    "browserify",
+    "require",
+    "node",
+    "mongodb",
+    "express",
+    "angular",
+    "angularjs"
+  ],
+  "author": "Leon Baird <leonbaird@mac.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GLBaird/geordie-builders/issues"
+  },
+  "homepage": "https://github.com/GLBaird/geordie-builders",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "minimist": "^1.2.0",
+    "prompt": "^0.2.14"
+  }
+}
