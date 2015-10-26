@@ -12,8 +12,8 @@ function buildIndex(appname, views, bootstrap, output) {
     }
 
     var templatePath = bootstrap
-        ? __dirname+"../templates/src/index-bootstrap.html"
-        : __dirname+"../templates/src/index.html";
+        ? __dirname+"/../templates/src/index-bootstrap.html"
+        : __dirname+"/../templates/src/index.html";
 
     var template = fs.readFileSync(templatePath).toString("utf8");
 
