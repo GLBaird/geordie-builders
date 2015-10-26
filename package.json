@@ -1,10 +1,10 @@
 {
   "name": "geordie-builders",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple tool for creating MEAN Web Application using Browserify building and testing",
   "main": "app.js",
   "bin": {
-    "geordiebuilders": "./app"
+    "geordiebuilders": "./app.js"
   },
   "preferGlobal": true,
   "scripts": {
