@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // load color manager
 var colors    = require('colors');
 
