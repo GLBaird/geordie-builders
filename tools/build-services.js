@@ -1,8 +1,8 @@
 var fs = require("fs");
 var path = require("path");
 
-var serviceTemplate = fs.readFileSync("./templates/src/js/services/service-template.js").toString('utf8');
-var serviceTestTemplate = fs.readFileSync("./templates/tests/service-spec.js").toString('utf8');
+var serviceTemplate = fs.readFileSync(__dirname+"/templates/src/js/services/service-template.js").toString('utf8');
+var serviceTestTemplate = fs.readFileSync(__dirname+"/templates/tests/service-spec.js").toString('utf8');
 
 function buildServices(services, factories, appname, outputpath) {
 

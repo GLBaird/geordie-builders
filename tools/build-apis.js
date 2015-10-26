@@ -1,8 +1,8 @@
 var fs = require("fs");
 var path = require("path");
 
-var modelTemplate = fs.readFileSync("./templates/server/models/model-template.js").toString("utf8");
-var apiTemplate = fs.readFileSync("./templates/server/api/api-template.js").toString("utf8");
+var modelTemplate = fs.readFileSync(__dirname+"/templates/server/models/model-template.js").toString("utf8");
+var apiTemplate = fs.readFileSync(__dirname+"/templates/server/api/api-template.js").toString("utf8");
 
 function buildAPIs(apiList, output) {
 
@@ -71,7 +71,7 @@ function buildAPIs(apiList, output) {
     // COPY Server.js File
 
     var serverJSFilePath = path.join(output, "server/server.js");
-    var serverJS = fs.readFileSync("./templates/server/server.js").toString("utf8");
+    var serverJS = fs.readFileSync(__dirname+"/templates/server/server.js").toString("utf8");
 
     console.log((" Write file.. "+serverJSFilePath).yellow);
     fs.writeFileSync(serverJSFilePath, serverJS);
