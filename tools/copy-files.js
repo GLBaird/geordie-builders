@@ -19,7 +19,7 @@ function copyFiles(output, settings) {
 
     for (var i in files) {
         if (files.hasOwnProperty(i)) {
-            var src = path.join( __dirname+"/templates", files[i] );
+            var src = path.join( __dirname+"../templates", files[i] );
 
             var dest = path.join( output, files[i] );
 
@@ -29,7 +29,7 @@ function copyFiles(output, settings) {
         }
     }
 
-    var bowerPath = bootstrap ? __dirname+"/templates/bower-bootstrap.json" : __dirname+"/templates/bower-nobootstrap.json";
+    var bowerPath = bootstrap ? __dirname+"../templates/bower-bootstrap.json" : __dirname+"../templates/bower-nobootstrap.json";
     var bowerFile = fs.readFileSync(bowerPath).toString('utf8');
 
     bowerFile = bowerFile
@@ -45,16 +45,16 @@ function copyFiles(output, settings) {
 
     // copy main CSS file
     var mainCSSFile = path.join(output, "src/css/01_main.css");
-    fs.writeFileSync(mainCSSFile, fs.readFileSync(__dirname+"/templates/src/css/01_main.css"));
+    fs.writeFileSync(mainCSSFile, fs.readFileSync(__dirname+"../templates/src/css/01_main.css"));
     success = success && fs.existsSync(mainCSSFile);
 
     // load templates for view related copies
-    var unitTemplate = fs.readFileSync(__dirname+"/templates/tests/controller-spec.js").toString('utf8');
-    var controllerTemplate = fs.readFileSync(__dirname+"/templates/src/js/controllers/controller-template.js").toString('utf8');
-    var viewTemplate = fs.readFileSync(__dirname+"/templates/src/js/views/view-template.html").toString('utf8');
-    var controllerRegistry = fs.readFileSync(__dirname+"/templates/src/js/controllers/index.js").toString('utf8');
+    var unitTemplate = fs.readFileSync(__dirname+"../templates/tests/controller-spec.js").toString('utf8');
+    var controllerTemplate = fs.readFileSync(__dirname+"../templates/src/js/controllers/controller-template.js").toString('utf8');
+    var viewTemplate = fs.readFileSync(__dirname+"../templates/src/js/views/view-template.html").toString('utf8');
+    var controllerRegistry = fs.readFileSync(__dirname+"../templates/src/js/controllers/index.js").toString('utf8');
     var cRegister = "";
-    var routers = fs.readFileSync(__dirname+"/templates/src/js/routes/index.js").toString('utf8');
+    var routers = fs.readFileSync(__dirname+"../templates/src/js/routes/index.js").toString('utf8');
     var routeRegistry = "";
     var otherwise;
 

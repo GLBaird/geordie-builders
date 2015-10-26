@@ -71,7 +71,7 @@ function buildAPIs(apiList, output) {
     // COPY Server.js File
 
     var serverJSFilePath = path.join(output, "server/server.js");
-    var serverJS = fs.readFileSync(__dirname+"/templates/server/server.js").toString("utf8");
+    var serverJS = fs.readFileSync(__dirname+"../templates/server/server.js").toString("utf8");
 
     console.log((" Write file.. "+serverJSFilePath).yellow);
     fs.writeFileSync(serverJSFilePath, serverJS);
