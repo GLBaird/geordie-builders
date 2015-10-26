@@ -12,17 +12,17 @@ sudo npm install -g geordie-builders
 
 ### For help:
 ```
-geordie-builders help
+geordiebuilders help
 ```
 
 ### To run:
 ```
-goerdie-builders
+goerdiebuilders
 ```
 This will install to current folder.
 
 ```
-geordie-builders -o <<filepath>>
+geordiebuilders -o <<filepath>>
 ```
 This will install project to chosen filepath.
 
