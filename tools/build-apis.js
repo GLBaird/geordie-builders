@@ -1,8 +1,8 @@
 var fs = require("fs");
 var path = require("path");
 
-var modelTemplate = fs.readFileSync(__dirname+"/templates/server/models/model-template.js").toString("utf8");
-var apiTemplate = fs.readFileSync(__dirname+"/templates/server/api/api-template.js").toString("utf8");
+var modelTemplate = fs.readFileSync(__dirname+"/../templates/server/models/model-template.js").toString("utf8");
+var apiTemplate = fs.readFileSync(__dirname+"/../templates/server/api/api-template.js").toString("utf8");
 
 function buildAPIs(apiList, output) {
 

@@ -54,7 +54,7 @@ var indexB    = require("./tools/build-index");
 var bs        = require("./tools/build-bootstrap");
 
 // set output directory to runtime argument geordiebuilders -o <<path>>
-var outputpath = argv.o || __dirname;
+var outputpath = argv.o || process.cwd();
 
 // setup prompt
 prompt.message = "";
