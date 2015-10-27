@@ -5,7 +5,7 @@ This is a template engine to create simple project setups that use the M.E.A.N. 
 > MongoDB, Express, AngularJS and NodeJS.
 > This project template engine also used Browserify, GULP, Karma, PhantomJS and Jasmine.
 
-[![Video Demo Youtube](http://img.youtube.com/vi/5K6aDX1N9pI/0.jpg)](http://www.youtube.com/watch‌​?v= 5K6aDX1N9pI)
+[![Video Demo Youtube](http://img.youtube.com/vi/5K6aDX1N9pI/0.jpg)](https://www.youtube.com/watch?v=5K6aDX1N9pI)
 
 ### To install:
 ```
