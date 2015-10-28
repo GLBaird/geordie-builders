@@ -82,6 +82,9 @@ var indexFinalBuildRaplacements = [
     { pattern: /src=["'].+?\/angular-route.+?.js["']/i,
       replace: "src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js'" },
     { pattern: /app.js/i, replace: "app.min.js" },
+    { pattern: /href=["'].+?\/bootstrap.+?.css["']/i,
+        replace: "href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'" },
+    { pattern: /app.js/i, replace: "app.min.js" },
     { pattern: /styles.css/i, replace: "styles.min.css" }
 ];
 
